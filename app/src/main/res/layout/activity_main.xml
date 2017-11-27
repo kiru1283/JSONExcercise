@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/layout_button"
+    >
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_count"
+        android:text="Count"
+        android:onClick="count"/>
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_list"
+        android:text="List"
+        android:onClick="list"/>
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_modify"
+        android:text="Modify"
+        android:onClick="modify"/>
+
+</LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layout_button">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/layout_text"
+        >
+
+    <TextView android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text=""
+        android:textSize="20dp"
+    android:id="@+id/txt_text"/>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>
